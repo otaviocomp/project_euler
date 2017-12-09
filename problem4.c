@@ -7,12 +7,22 @@ int main()
 	int a = 999;
 	int b = 999;
 	int flag = 0;
-	while(flag == 0)
+	int bit = 0;
+	int palindrome = 0;
+	while(a > 0)
 	{
-		flag = is_palindrome(a*b);
-		b--;
+		a--;
+		b = 999;
+		while(flag == 0)
+		{
+			b--;
+			flag = is_palindrome(a*b);
+		}
+		if(a*b > palindrome)
+			palindrome = a*b;
+		flag = 0;
 	}
-	printf("result = %d\n", a*b);
+	printf("result = %d\n", palindrome);
 }
 
 int is_palindrome(int x)
