@@ -20,11 +20,10 @@ int main()
 			{
 				change = c;
 				b = i;
-				break;
 			}
 		}	
 	}
-	printf("a = %d b = %d c = %d soma = %d\n result = %d\n", a, b, c, a+b+c, a*b*c);
+	printf("a = %d b = %d c = %d soma = %d result = %d\n", a, b, c, a+b+c, a*b*c);
 }
 
 int get_c(int x, int c)
@@ -39,7 +38,6 @@ int get_c(int x, int c)
 			y = x/i;
 			if(y == i)
 			{
-				printf("sucesso\n");
 				flag = 1;
 				break;
 			}
