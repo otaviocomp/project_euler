@@ -14,7 +14,7 @@ int main()
 		a++;
 		for(i = a + 1; i < 1000; i++) 
 		{
-			printf("a = %d b = %d c = %d\n", a, b, c);
+			printf("a = %d b = %d c = %d soma = %d\n", a, b, c, a+b+c);
 			c = get_c(a*a + i*i, c);
 			if(change != c)
 			{
@@ -24,7 +24,7 @@ int main()
 			}
 		}	
 	}
-	printf("a = %d b = %d c = %d result = %d\n", a, b, c, a*b*c);
+	printf("a = %d b = %d c = %d soma = %d\n result = %d\n", a, b, c, a+b+c, a*b*c);
 }
 
 int get_c(int x, int c)
