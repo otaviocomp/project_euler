@@ -9,7 +9,7 @@ int main()
 	int c = 1;
 	int change = c;
 	int i;
-	while(a + b + c != 1000)
+	while(1)
 	{
 		a++;
 		for(i = a + 1; i < 1000; i++) 
@@ -21,7 +21,11 @@ int main()
 				change = c;
 				b = i;
 			}
-		}	
+			if(a + b + c == 1000)
+				break;
+		}
+		if(a + b + c == 1000)
+			break;
 	}
 	printf("a = %d b = %d c = %d soma = %d result = %d\n", a, b, c, a+b+c, a*b*c);
 }
