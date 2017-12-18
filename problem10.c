@@ -10,7 +10,7 @@ int main()
 	long int sum = 10;
 	for(i = 7; i < N; i = i + 2)
 	{
-		for(j = 5; j < i; j = j + 2)
+		for(j = 3; j < i; j = j + 2)
 		{
 			if(i % j == 0)
 			{
@@ -22,6 +22,6 @@ int main()
 			sum = sum + i;
 		flag = 1;	
 	}
-	printf("result = %d\n", sum);
+	printf("result = %ld\n", sum);
 }
 
