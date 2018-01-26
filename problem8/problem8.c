@@ -20,5 +20,5 @@ int main()
 			greatest = product;
 		product = 1;
 	}
-	printf("result = %d\n", greatest);
+	printf("result = %lu\n", greatest);
 }
